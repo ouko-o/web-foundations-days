@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Notes Toolkit</h1>
+        <p>Write your note below and track your characters and words.</p>
+
+        <label for="note-text">Your note</label>
+        <textarea
+            id="note-text"
+            rows="8"
+            maxlength="200"
+            placeholder="Start typing your note..."
+        ></textarea>
+
+        <div class="counter-section">
+            <p id="char-count" aria-live="polite">0 / 200 characters</p>
+            <p id="word-count" aria-live="polite">0 words</p>
+        </div>
+
+        <div class="buttons">
+            <button id="clear-btn" type="button">Clear</button>
+            <button id="theme-toggle" type="button">Dark mode</button>
+        </div>
+    </main>
+</body>
+</html>
